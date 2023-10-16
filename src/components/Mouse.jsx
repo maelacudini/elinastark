@@ -20,7 +20,7 @@ export default function Mouse() {
     y: useMotionValue(0),
   };
 
-  const smoothOptions = { damping: 10, stifness: 500, mass: 0.1 };
+  const smoothOptions = { stifness: 500, mass: 0.1 };
   const smoothMouse = {
     x: useSpring(mouse.x, smoothOptions),
     y: useSpring(mouse.y, smoothOptions),
@@ -30,6 +30,9 @@ export default function Mouse() {
     const { clientX, clientY, movementX, movementY } = e;
     mouse.x.set(clientX);
     mouse.y.set(clientY);
+
+    const image = document.getElementById("image");
+    image.style.display = "block";
 
     step += Math.abs(movementX) + Math.abs(movementY);
 
@@ -50,7 +53,12 @@ export default function Mouse() {
       style={{ left: smoothMouse.x, top: smoothMouse.y }}
       className={style.main}
     >
-      <img src={images[currentSlideIndex].url} alt="image" loading="lazy" />
+      <img
+        src={images[currentSlideIndex].url}
+        alt="image"
+        id="image"
+        loading="lazy"
+      />
     </motion.div>
   );
 }
