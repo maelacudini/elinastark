@@ -23,14 +23,6 @@ export default function About() {
         competitive market.
       </p>
 
-      <p className={style.text}>
-        Publications have the power to inform, inspire, and entertain. We
-        specialize in the art of publication design, turning your content into
-        beautifully designed, cohesive, and engaging pieces. Whether it's a
-        magazine, book, annual report, or any other publication, we ensure that
-        your message is not only read but cherished.
-      </p>
-
       <button
         onClick={() => {
           setOpen(!open);

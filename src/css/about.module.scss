@@ -1,18 +1,4 @@
 .main {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 10%;
-
-  .text {
-    flex-basis: 45%;
-    margin-bottom: 20px;
-  }
-
-  .title {
-    margin-bottom: 20px;
-  }
-
   .offcanvas {
     position: fixed;
     background-color: #ffffff;
@@ -29,6 +15,10 @@
 
     .social {
       margin-bottom: 20px;
+
+      .title {
+        margin-bottom: 20px;
+      }
 
       .link {
         margin-bottom: 10px;

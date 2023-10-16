@@ -1,5 +1,6 @@
 import style from "../css/work.module.scss";
 import { motion } from "framer-motion";
+import { generals } from "../utils/animations";
 
 const images = [
   { url: "./0.webp", title: "Ephemeral Dreams" },
@@ -12,25 +13,32 @@ const images = [
 
 export default function Work() {
   return (
-    <div className={style.main}>
+    <motion.div
+      variants={generals}
+      initial="initial"
+      animate="animate"
+      exit="exit"
+      className={style.main}
+    >
       <div className={style.container}>
         {images.map((image, index) => (
           <div key={index} className={style.inner}>
             <p>{image.title}</p>
-            <motion.img
-              initial={{ opacity: 0, y: 20 }}
-              animate={{
-                opacity: 1,
-                y: 0,
-                transition: { delay: index * 0.3, duration: 0.3 },
-              }}
-              src={image.url}
-              alt="image"
-              loading="lazy"
-            />
+            <div style={{ overflow: "hidden" }}>
+              <motion.img
+                initial={{ scale: 1.1 }}
+                whileInView={{
+                  scale: 1,
+                  transition: { delay: index * 0.3, duration: 0.3 },
+                }}
+                src={image.url}
+                alt="image"
+                loading="lazy"
+              />
+            </div>
           </div>
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 }
