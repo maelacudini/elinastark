@@ -3,13 +3,13 @@ import style from "../css/mouse.module.scss";
 import { motion, useMotionValue, useSpring } from "framer-motion";
 
 const images = [
-  { url: "/0.webp" },
-  { url: "/1.webp" },
-  { url: "/2.webp" },
-  { url: "/3.webp" },
-  { url: "/4.webp" },
-  { url: "/5.webp" },
-  { url: "/6.webp" },
+  { url: "./0.webp" },
+  { url: "./1.webp" },
+  { url: "./2.webp" },
+  { url: "./3.webp" },
+  { url: "./4.webp" },
+  { url: "./5.webp" },
+  { url: "./6.webp" },
 ];
 
 export default function Mouse() {

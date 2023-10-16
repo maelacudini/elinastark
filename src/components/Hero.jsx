@@ -29,7 +29,7 @@ export default function Hero() {
       {showCursor && <Mouse />}
       <img
         className={style.image}
-        src="/3.webp"
+        src="./3.webp"
         alt="image"
         width={"300px"}
         height={"300px"}
