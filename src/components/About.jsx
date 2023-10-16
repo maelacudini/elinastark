@@ -82,7 +82,6 @@ export default function About() {
                   setOpen(!open);
                 }}
                 className="button"
-                style={{ marginBottom: "40px" }}
               >
                 Close
               </button>

@@ -33,7 +33,6 @@ export default function Work() {
                 }}
                 src={image.url}
                 alt="image"
-                loading="lazy"
               />
             </div>
           </div>
