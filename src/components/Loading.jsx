@@ -4,13 +4,7 @@ import { motion } from "framer-motion";
 
 export default function Loading() {
   return (
-    <motion.div
-      exit={{
-        backgroundColor: "rgb(248, 244, 238)",
-        transition: { duration: 0.5, ease: "easeInOut", delay: 0.6 },
-      }}
-      className={style.main}
-    >
+    <motion.div className={style.main}>
       <motion.h1
         variants={generals}
         initial="initial"

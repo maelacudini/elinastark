@@ -11,16 +11,15 @@
   bottom: 0;
   justify-content: center;
   align-items: center;
-  background-color: #000000;
   z-index: 100;
 
   h1 {
-    color: rgb(248, 244, 238) !important;
+    color: white !important;
     position: absolute;
   }
 
   .line {
-    border-top: 3px solid rgb(248, 244, 238);
+    border-top: 3px solid white;
     position: absolute;
     left: 20px;
     right: 20px;

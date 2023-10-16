@@ -3,6 +3,7 @@ import Mouse from "./Mouse";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { generals } from "../utils/animations";
+import Cursor from "./Cursor";
 
 export default function Hero() {
   const [showCursor, setShowCursor] = useState(true);
