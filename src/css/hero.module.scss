@@ -1,0 +1,22 @@
+.image {
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.main {
+  p {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .main {
+    p {
+      width: 70%;
+    }
+  }
+}

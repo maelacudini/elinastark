@@ -1,0 +1,28 @@
+.main {
+  width: 100%;
+  overflow: scroll;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+
+  img {
+    width: 300px;
+    height: auto;
+  }
+}
+
+.inner {
+  position: relative;
+
+  p {
+    margin-bottom: 20px;
+  }
+
+  img {
+    z-index: 90;
+    position: relative;
+  }
+}

@@ -1,0 +1,60 @@
+.main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10%;
+
+  .text {
+    flex-basis: 45%;
+    margin-bottom: 20px;
+  }
+
+  .title {
+    margin-bottom: 20px;
+  }
+
+  .offcanvas {
+    position: fixed;
+    background-color: #fcfff6;
+    box-shadow: 0px 0px 20px #1b1b1b30;
+    top: 20%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 40px;
+    z-index: 100;
+    overflow-y: scroll;
+    display: flex;
+    gap: 10%;
+
+    .social {
+      margin-bottom: 20px;
+
+      .link {
+        margin-bottom: 10px;
+        font-size: 18px;
+        display: block;
+        transition: 0.3s;
+      }
+
+      .link:hover {
+        text-decoration: underline;
+        transition: 0.3s;
+      }
+    }
+
+    div {
+      flex-basis: 45%;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .main {
+    display: block;
+
+    .offcanvas {
+      display: block;
+    }
+  }
+}

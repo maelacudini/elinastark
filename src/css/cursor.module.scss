@@ -1,0 +1,16 @@
+.main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 90;
+
+  .img {
+    width: 250px;
+    position: absolute;
+    object-fit: contain;
+    object-position: center;
+    transform: translateX(-50%) translateY(-50%);
+  }
+}
