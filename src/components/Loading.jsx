@@ -33,7 +33,7 @@ export default function Loading() {
           height: "300px",
           transition: { duration: 0.5, ease: "easeInOut", delay: 1 },
         }}
-        src="/3.webp"
+        src="./3.webp"
         alt="img"
         loading="lazy"
       />
