@@ -31,9 +31,6 @@ export default function Mouse() {
     mouse.x.set(clientX);
     mouse.y.set(clientY);
 
-    const image = document.getElementById("image");
-    image.style.display = "block";
-
     step += Math.abs(movementX) + Math.abs(movementY);
 
     if (step >= 300 * currentSlideIndex) {
