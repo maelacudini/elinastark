@@ -19,10 +19,10 @@ export default function Work() {
             <p>{image.title}</p>
             <motion.img
               initial={{ opacity: 0, y: 20 }}
-              whileInView={{
+              animate={{
                 opacity: 1,
                 y: 0,
-                transition: { delay: index * 0.2, duration: 0.2 },
+                transition: { delay: index * 0.3, duration: 0.3 },
               }}
               src={image.url}
               alt="image"
