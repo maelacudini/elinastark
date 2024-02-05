@@ -37,7 +37,7 @@ export default function Hero() {
         loading="lazy"
       />
       <motion.p variants={generals} initial="initial" animate="animate">
-        A considered and creative approach to branding and publication design
+        A creative approach to photography and branding
       </motion.p>
     </div>
   );

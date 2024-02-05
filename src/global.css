@@ -25,6 +25,10 @@ font-family: 'Work Sans', sans-serif;
   display: none;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   padding: 20px;
   margin: 0;
@@ -74,4 +78,14 @@ a {
 .button:hover {
   transition: 0.3s;
   scale: 0.9;
+}
+
+.swiper {
+  height: 100%;
+  min-height: 90lvh;
+}
+
+.swiper-slide {
+  height: 100%;
+  width: fit-content !important;
 }

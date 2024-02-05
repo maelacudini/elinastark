@@ -23,9 +23,9 @@ export default function App() {
 
   return (
     <main>
-      <AnimatePresence mode="wait">
+      {/* <AnimatePresence mode="wait">
         {loading && <Loading key="loading" />}
-      </AnimatePresence>
+      </AnimatePresence> */}
 
       <AnimatePresence mode="wait">
         <Routes location={location} key={location.key}>
